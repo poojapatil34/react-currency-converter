@@ -1,0 +1,95 @@
+/* app_styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.content-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.content-box:hover {
+  transform: scale(1.05);
+}
+
+.input-section {
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-section input, select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ff7eb3;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-section input:focus, select:focus {
+  border-color: #ff4f7b;
+  box-shadow: 0 0 10px rgba(255, 79, 123, 0.5);
+}
+
+.swap-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.swap-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.3s;
+}
+
+.swap-button:hover {
+  background: #0056b3;
+}
+
+.convert-button {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.3s;
+}
+
+.convert-button:hover {
+  background: #218838;
+}
